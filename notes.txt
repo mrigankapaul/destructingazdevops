@@ -1,0 +1,83 @@
+Azure DevOps Tools
+    - Boards
+    - Repos
+    - Pipelines
+    - Test Plans
+    - Artifacts
+    (Wiki) (Dashboard)
+Azure Board
+    Work Items - Product Backlog, Bug, Impediment
+    Traceability
+    Planning - Backlogs
+    Kanban approach
+
+// Changing the process
+Setting up process -> Boards -> Project Settings -> Project Details -> Basic -> Boards -> Process -. Agile
+
+Epic -> Feature -> Stories/Backlog
+Story points
+
+Artifacts Example
+    - Java app packages as a .zip file
+    - docker image or vm 
+Build Agent
+    Builds tests and deploys code in the cloud
+    Run tasks in build definition
+Build Pipeline
+    Code -> Steps -> Artifact
+Release Pipeline
+    Artifact -> Steps -> Deploy to different environment
+Pipelines -> 1..n phases -> 1..n tasks -> 1..n executed by Agent(s)(Agent Pool)
+
+// Managing Builds
+Build System - A build system is used to automatically produce all the artifacts required to successfully deploy, test, and run our production software.
+
+CI Is the practice in software engineering of merging all developer working copies to a shared mainline several times a day.
+
+CI Build - we build integrated changes of our mainline by means of a build server after each commit.
+
+Hosted Builds - Pay for per minute of usage
+Hosted Pipelines - Give you unlimited build minutes for 1 concurrent build.
+Custom Build Agent - Download and register with DevOps - comes with custom pipleline (Default 1 custom pipeline) -> Buy more
+
+
+Build Security
+    Agents -> cross platform
+    Agent Pool (Securable Unit)-> Logical Component, You can register your own agents in the default pool. Serves a general purpose of running builds
+    Hosted pools -> provided by MS and runs on cloud. MS manages the machines and software on those machines. Shared among all devops service. You can install multiple agent pools for parallel execution of a build.
+    Agent Queues -> Agent Pools are exposed to the team project by Agent Queues. These queues are also a securable resource. So u can restrict who can create new build.
+
+47j2lespwb2cuz7ox7eqqngbonl5wwj4jfzalcgxcl4ese2xwqta
+
+Build Variables
+    - User Defined Variables
+    - System Variables
+    - Predefined Variables
+    - Environment Variables
+    - secrets
+Build Trigers
+    - CI Trigger
+    - Branch Filter
+    - Pull Request (Build definition(github) or Branch policy(git))
+    - Gated check in (TFVCS)
+Build Job Properties
+Build Demands
+Build Number format
+OAuth Token
+Retention Policy
+Change History
+Build your own task
+
+Different Builds for different purpose
+    - CI Build - Compile and Test (Continuos Integration)
+    - Nightly Build - Compile, Regression, Provisioning, Code Analysis (Scheduled)
+    - Release Build - Compile, Test, Regression, Config Management, Archive (Manual)
+Optimizing Builds - Build Feedback loop
+    Enable Parallel build execution
+    Enable parallel test execution for faster result
+    Using multipliers to scale builds over multiple agents - (You need to have the multiple agents)
+    Make integration tests part of release process instead of the build
+    Publish to a NuGet feed at the end of the build
+
+
+

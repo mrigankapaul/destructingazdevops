@@ -1,0 +1,6 @@
+In  continuous delivery we strive to separate a deployment from a release.
+Steps of Release 
+    Build the software including Provisioning script
+    Deploy the software in the provisioning environment
+    Then release the feature using feature toggling
+Clean separation of different stages of delivery

@@ -4,3 +4,22 @@ Steps of Release
     Deploy the software in the provisioning environment
     Then release the feature using feature toggling
 Clean separation of different stages of delivery
+End to End traceable
+
+Release Management Concepts
+    - Release definition pipeline
+    - Release Agent 
+Continous Deployment Trigger
+    - Build (Azure Devops), Git, 
+    - TFVCS
+    - github
+    - Jenkins
+    - Azure DevOps Artifact Management
+    - Container Registry
+    - Docker Hub
+For Derploying on premise - We need to do it using Deployment Group
+Add Secrets Just In Time (Use Replace Tokens Task)
+Security 
+    Release
+    Stages
+    Agents

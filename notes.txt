@@ -39,7 +39,7 @@ CI Build - we build integrated changes of our mainline by means of a build serve
 Hosted Builds - Pay for per minute of usage
 Hosted Pipelines - Give you unlimited build minutes for 1 concurrent build.
 Custom Build Agent - Download and register with DevOps - comes with custom pipleline (Default 1 custom pipeline) -> Buy more
-
+Interractive Agents
 
 Build Security
     Agents -> cross platform
